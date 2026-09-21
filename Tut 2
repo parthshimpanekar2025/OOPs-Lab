@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total = 0;
+
+    for (int num = 2; num <= 50; num += 2) {
+        total += num;
+    }
+
+    cout << "Sum of even numbers from 1 to 50: " << total << endl;
+
+    return 0;
+}
