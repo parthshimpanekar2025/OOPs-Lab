@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+class EvenSum
+{
+    int sum;
+
+public:
+    void calculate()
+    {
+        sum = 0;
+
+        for (int i = 1; i <= 50; i++)
+        {
+            if (i % 2 == 0)
+            {
+                sum = sum + i;
+            }
+        }
+    }
+
+    void display()
+    {
+        cout << "Sum of even numbers between 1 to 50 = " << sum;
+    }
+};
+
+int main()
+{
+    EvenSum obj;
+
+    obj.calculate();
+    obj.display();
+
+    return 0;
+}
